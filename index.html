@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Secret Santa</title>
+        <style>
+            h1 {text-align: center;}
+            p {text-align: center;}
+            div {text-align: center;}
+            .center
+            {
+                text-align: center;
+                list-style-position: inside;
+            }
+            ol.center li
+            {
+                text-align: left;
+                margin-left: 40%;
+            }
+            .center2 {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 25%;
+            }
+        </style>
+    </head>
+    <body style="background-color:#91c091">
+        <h1>BCA Secret Santa!</h1>
+        <p>What is Secret Santa?</p>
+        <p>
+            <a href = https://en.wikipedia.org/wiki/Secret_Santa>Click this link to find out more.</a>
+        </p>
+        <p>Why join?</p>
+
+        <ol class="center">
+            <li>Trade presents,</li>
+            <li>Make new friends,</li>
+            <li>And enjoy the Christmas Sprit!</li>
+        </ol>
+
+        <img src="secretsanta.jpeg" alt="Hi" class="center2">
+
+        <p>To sign up, fill out the following form:</p>
+
+        <p>
+            <label for="name">Enter your name:</label>
+            <input type="text", id="name" name="name" required>
+
+            <br><br>
+
+            <label for="email">Enter email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <p>Select your grade:</p>
+            <p>
+                <input type="radio" name="year" value="9th" id="option-1">
+                <label for="option-1">9th</label>
+                <input type="radio" name="year" value="10th" id="option-2">
+                <label for="option-2">10th</label>
+                <input type="radio" name="year" value="11th" id="option-3">
+                <label for="option-3">11th</label>
+                <input type="radio" name="year" value="12th" id="option-4">
+                <label for="option-4">12th</label>
+            </p>
+
+            <p>
+                <label for="bio">What interests you have -- to send to your Secret Santa!</label>
+                <br>
+                <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you (make sure not to include your name!)..."></textarea>
+
+                <br>
+                <input type="submit" value="Submit the form!">
+            </p>
+            
+        </p>
+        
+    </body>
+</html>
+
+
