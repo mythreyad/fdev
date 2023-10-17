@@ -23,12 +23,32 @@
                 width: 25%;
             }
         </style>
+        <!--Import Google Icon Font-->
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <!-- Compiled and minified CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        />
     </head>
-    <body style="background-color:#91c091">
+    <div class="navbar navbar-fixed"> 
+        <nav>
+            <div class="nav-wrapper">
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html">About the Organizers</a></li>
+                    <li><a href="index.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <body style="background-color:white">
         <h1>BCA Secret Santa!</h1>
-        <p>What is Secret Santa?</p>
+        <h3><p>What is Secret Santa?</p></h3>
         <p>
-            <a href = https://en.wikipedia.org/wiki/Secret_Santa>Click this link to find out more.</a>
+            <h5><p><a href = https://en.wikipedia.org/wiki/Secret_Santa>Click this link to find out more.</a></p></h5>
         </p>
         <p>Why join?</p>
 
@@ -40,42 +60,63 @@
 
         <img src="secretsanta.jpeg" alt="Hi" class="center2">
 
-        <p>To sign up, fill out the following form:</p>
-
-        <p>
-            <label for="name">Enter your name:</label>
-            <input type="text", id="name" name="name" required>
-
-            <br><br>
-
-            <label for="email">Enter email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <br><br>
-
-            <p>Select your grade:</p>
-            <p>
-                <input type="radio" name="year" value="9th" id="option-1">
-                <label for="option-1">9th</label>
-                <input type="radio" name="year" value="10th" id="option-2">
-                <label for="option-2">10th</label>
-                <input type="radio" name="year" value="11th" id="option-3">
-                <label for="option-3">11th</label>
-                <input type="radio" name="year" value="12th" id="option-4">
-                <label for="option-4">12th</label>
-            </p>
-
-            <p>
-                <label for="bio">What interests you have -- to send to your Secret Santa!</label>
-                <br>
-                <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you (make sure not to include your name!)..."></textarea>
-
-                <br>
-                <input type="submit" value="Submit the form!">
-            </p>
-            
-        </p>
+        <div class="container">
+            <form>
+                <h4 class="center">To sign up, fill out the following form!</h4>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input
+                            id="name"
+                            type="email"
+                            class="validate"
+                            required
+                        />
+                        <label for="name">Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input
+                            id="email"
+                            type="email"
+                            class="validate"
+                            required
+                        />
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <select>
+                          <option value="1">9th Grade</option>
+                          <option value="2">10th Grade</option>
+                          <option value="3">11th Grade</option>
+                          <option value="4">12th Grade</option>
+                        </select>
+                        <label>Grade</label>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                      <textarea id="textarea1" class="materialize-textarea" placeholder="What interests you have -- to send to your Secret Santa! Make sure not to include your name."></textarea>
+                      <label for="textarea1">A Short Bio</label>
+                    </div>
+                </div>
+                <div class="row center">
+                    <button
+                        class="btn waves-effect waves-dark"
+                        type="submit"
+                    >
+                        Submit!
+                    </button>
+                </div>
+            </form>
+        </div>
         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script>
+            M.AutoInit();
+        </script>
     </body>
 </html>
 
