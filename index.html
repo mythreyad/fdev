@@ -112,6 +112,65 @@
                 </div>
             </form>
         </div>
+
+        <div class="container">
+            <form id="quiz">
+                <h4 class="center">Test your Christmas Knowledge:</h4>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <select id="q1">
+                          <option value="1">December 20th</option>
+                          <option value="2">December 25th</option>
+                          <option value="3">November 22nd</option>
+                          <option value="4">December 31st</option>
+                        </select>
+                        <label>What day is Christmas?</label>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <select id="q2">
+                          <option value="1">Fruit Punch</option>
+                          <option value="2">Wine</option>
+                          <option value="3">Eggnog</option>
+                          <option value="4">Kool-Aid</option>
+                        </select>
+                        <label>What is a popular Christmas drink?</label>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <select id="q3">
+                          <option value="1">St. Paul</option>
+                          <option value="2">St. Arnold</option>
+                          <option value="3">St. Harold</option>
+                          <option value="4">St. Nicholas</option>
+                        </select>
+                        <label>What person is Santa based on?</label>
+                      </div>
+                </div>
+                <div class="row center">
+                    <button class="btn waves-effect waves-dark" type="button" value="submit" id="submit-quiz">
+                        Submit!
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div id="score">Score: not submitted</div>>
+
+        <!-- add countdown till christmas-->
+        <section id="countdown" class="text-center">
+
+            <h1>Countdown to Christmas!</h1>
+            <div id="timer"></div>
+
+            <br><br>
+
+        </section>
+
+        <script src="timer.js"></script>
+        <script src="quiz.js"></script>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
         <script>
@@ -119,5 +178,3 @@
         </script>
     </body>
 </html>
-
-
